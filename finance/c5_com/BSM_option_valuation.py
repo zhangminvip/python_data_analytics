@@ -13,7 +13,8 @@ def d1f(St, K, t, T, r, sigma):
     return d1
 
 
-
+def dN(x):
+    return math.exp(-0.5 * x ** 2) / math.sqrt(2 * math.pi)
 
 
 
