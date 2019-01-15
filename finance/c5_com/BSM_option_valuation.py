@@ -17,7 +17,8 @@ def dN(x):
     return math.exp(-0.5 * x ** 2) / math.sqrt(2 * math.pi)
 
 
-
+def N(d):
+    return quad(lambda x: dN(x), -20, d, limit=50)[0]
 
 
 
